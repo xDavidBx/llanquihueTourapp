@@ -1,0 +1,37 @@
+package llanquihuetourapp.model;
+
+public class ServicioTuristico {
+    protected String nombre;
+    protected double duracionHoras;
+
+    // Constructor
+    public ServicioTuristico(String nombre, double duracionHoras) {
+        this.nombre = nombre;
+        this.duracionHoras = duracionHoras;
+    }
+
+    // Getters y Setters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getDuracionHoras() {
+        return duracionHoras;
+    }
+
+    public void setDuracionHoras(double duracionHoras) {
+        this.duracionHoras = duracionHoras;
+    }
+
+    @Override
+    public String toString() {
+        return "ServicioTuristico{" +
+                "nombre='" + nombre + '\'' +
+                ", duracionHoras=" + duracionHoras + " hrs" +
+                '}';
+    }
+}
