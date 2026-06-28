@@ -66,4 +66,18 @@ LlanquihueTourApp/
 - Colecciones de Java
 
 ---
+## Semana 6 - Jerarquías de Clases con Herencia
 
+**Objetivo:** Implementar herencia simple para modelar diferentes tipos de servicios turísticos.
+
+**Clases implementadas:**
+- `ServicioTuristico` (superclase)
+- `RutaGastronomica`, `PaseoLacustre` y `ExcursionCultural` (subclases)
+
+**Conceptos aplicados:**
+- Herencia
+- Uso de `super()` 
+- Sobrescritura de métodos (`toString()`)
+- Polimorfismo
+
+**Cómo ejecutar:** Ejecutar la clase `llanquihuetourapp.ui.Main`
