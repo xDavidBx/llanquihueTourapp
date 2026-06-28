@@ -1,6 +1,0 @@
-Isla Huar;Calbuco;1200
-Paseo Lacustre;Puerto Varas;850
-Ruta Gastronómica;Frutillar;650
-Tour Cultural;Puerto Montt;950
-Volcán Osorno;Ensenada;1800
-Senderismo Lago Llanquihue;Llanquihue;750

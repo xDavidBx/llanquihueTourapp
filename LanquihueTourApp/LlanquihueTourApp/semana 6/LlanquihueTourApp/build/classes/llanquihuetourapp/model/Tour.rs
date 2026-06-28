@@ -1,1 +1,0 @@
-llanquihuetourapp.model.Tour
