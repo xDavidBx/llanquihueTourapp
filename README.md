@@ -11,24 +11,27 @@ El sistema lee datos desde archivos externos (.txt), los carga en colecciones di
 ## Estructura del Proyecto
 
 ```plaintext
-LlanquihueTourApp/
-├── src/
-│   └── llanquihuetourapp/
-│       ├── model/
-│       │   ├── Tour.java
-│       │   └── Persona.java
-│       ├── data/
-│       │   └── GestorDatos.java
-│       ├── service/
-│       │   └── TourService.java
-│       ├── util/
-│       │   └── Validador.java
-│       └── ui/
-│           └── Main.java
-├── resources/
-│   ├── tours.txt
-│   └── personas.txt
-└── README.md
+src/
+└── llanquihuetourapp/
+    ├── model/
+    │   ├── Tour.java
+    │   ├── Persona.java
+    │   ├── ServicioTuristico.java          ← superclase / mejorada
+    │   ├── RutaGastronomica.java           ← actualizada
+    │   ├── PaseoLacustre.java              ← actualizada
+    │   └── ExcursionCultural.java          ← actualizada
+    ├── data/
+    │   ├── GestorDatos.java
+    │   └── GestorServicios.java            ← actualizada con coleccion polimórfica
+    ├── service/
+    │   └── TourService.java
+    ├── util/
+    │   └── Validador.java
+    └── ui/
+        └── Main.java        ← actualizada    
+resources/
+    ├── tours.txt
+    └── personas.txt
 ````
 
 
@@ -81,3 +84,17 @@ LlanquihueTourApp/
 - Polimorfismo
 
 **Cómo ejecutar:** Ejecutar la clase `llanquihuetourapp.ui.Main`
+
+
+## Semana 7 - Polimorfismo y Colecciones Genéricas
+
+**Objetivo:** Aplicar polimorfismo mediante una colección de tipo `List<ServicioTuristico>` y el método `mostrarInformacion()` sobrescrito.
+
+**Conceptos aplicados:**
+- Colecciones genéricas (`List<ServicioTuristico>`)
+- Polimorfismo (llamar métodos sobrescritos desde referencia de superclase)
+- Clase abstracta con método abstracto
+- Sobrescritura con `@Override`
+
+**Cómo ejecutar:**
+Ejecutar la clase `llanquihuetourapp.ui.Main`
