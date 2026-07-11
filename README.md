@@ -1,14 +1,19 @@
-# Llanquihue Tour App
+# Llanquihue Tour App - Sistema de Gestión
 
-**Sistema de Gestión para Agencia de Turismo**  
-*Desarrollado como actividad sumativa - Semana 5*
+**Proyecto desarrollado durante el curso de Programación Orientada a Objetos**
 
-## Descripción
-Aplicación en Java que permite gestionar tours turísticos y personal vinculado (guías, operadores y proveedores) de la agencia **Llanquihue Tour**. 
+## Descripción General
+Sistema completo para la agencia de turismo **Llanquihue Tour** que gestiona tours, personal, vehículos y colaboradores mediante principios de POO.
 
-El sistema lee datos desde archivos externos (.txt), los carga en colecciones dinámicas (`ArrayList`), aplica validaciones, filtros y búsquedas, demostrando principios de **organización modular**, **separación de responsabilidades** y **buenas prácticas** de programación orientada a objetos.
+## Funcionalidades por Semana
+
+- **Semanas 4-5**: Lectura de archivos, ArrayList y filtrado
+- **Semana 6**: Jerarquía de clases con herencia (`ServicioTuristico`)
+- **Semana 7**: Polimorfismo y colecciones genéricas
+- **Semana 8 (Sumativa)**: Interfaces, `instanceof`, y GUI básica
 
 ## Estructura del Proyecto
+
 
 ```plaintext
 src/
@@ -16,19 +21,26 @@ src/
     ├── model/
     │   ├── Tour.java
     │   ├── Persona.java
-    │   ├── ServicioTuristico.java          ← superclase / mejorada
-    │   ├── RutaGastronomica.java           ← actualizada
-    │   ├── PaseoLacustre.java              ← actualizada
-    │   └── ExcursionCultural.java          ← actualizada
+    │   ├── ServicioTuristico.java          
+    │   ├── RutaGastronomica.java          
+    │   ├── PaseoLacustre.java              
+    │   ├── ExcursionCultural.java
+    │   ├── Vehiculo.java                 ← Nueva clase
+    │   ├── Registrable.java              ← Nueva clase
+    │   ├── GuiaTuristico.java            ← Nueva clase
+    │   └── ColaboradorExterno.java       ← Nueva clase 
     ├── data/
     │   ├── GestorDatos.java
-    │   └── GestorServicios.java            ← actualizada con coleccion polimórfica
+    │   ├── GestorServicios.java
+    │   └── GestorEntidades.java      ← Nueva clase  
     ├── service/
     │   └── TourService.java
     ├── util/
     │   └── Validador.java
     └── ui/
-        └── Main.java        ← actualizada    
+        ├── Main.java        ← actualizada
+        └── GUIPrincipal.java    ← Nueva clase
+  
 resources/
     ├── tours.txt
     └── personas.txt
@@ -98,3 +110,19 @@ resources/
 
 **Cómo ejecutar:**
 Ejecutar la clase `llanquihuetourapp.ui.Main`
+
+## Tecnologías y Conceptos Aplicados (Semana 8)
+
+- **Interfaz**: `Registrable`
+- **Polimorfismo** y colecciones genéricas (`List<Registrable>`)
+- **Diferenciación de tipos** con `instanceof`
+- **Interfaz Gráfica** con Swing (`JFrame` + `JOptionPane`)
+- Herencia, abstracción y encapsulamiento
+
+## Cómo Ejecutar
+
+### Opción 1: Modo Consola
+Ejecutar la clase `llanquihuetourapp.ui.Main`
+
+### Opción 2: Interfaz Gráfica (Recomendada)
+Ejecutar la clase `llanquihuetourapp.ui.GUIPrincipal`
